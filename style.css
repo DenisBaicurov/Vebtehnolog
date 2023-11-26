@@ -1,0 +1,75 @@
+.bg {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 300% 300%;
+  background-image: linear-gradient(-45deg, Azure 0%,  PaleGreen 25%, GreenYellow 51%, LightSeaGreen 100%);
+  -webkit-animation: AnimateBG 5s ease infinite;
+          animation: AnimateBG 5s ease infinite;
+}
+
+@-webkit-keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.card {
+    width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+
+    background-color: rgb(22 58 103 / 60%);
+    box-shadow: 0 5px 10px gray;
+    border-radius: 10px;
+}
+
+.card-foto {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.card-title {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+.card-text {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+.card-list {
+    font-size: 16px;
+    color: black;
+    padding-left: 0;
+    list-style-position: inside;  
+}
+.card-subtitle {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
